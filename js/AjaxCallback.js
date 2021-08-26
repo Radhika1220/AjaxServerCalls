@@ -29,11 +29,13 @@ function makeAJAXCall(methodType,url,callBack,async=true,data=null)
     }
     else
     {
+        console.log("******************************************");
         xhr.send();
+        
     }
     console.log(methodType+" request send to the server");
 }
-//getting data form json
+// //getting data form json
 const getURL="http://localhost:3000/employees/";
 function getUserDetails(data)
 {
@@ -41,13 +43,13 @@ function getUserDetails(data)
 }
 makeAJAXCall("GET",getURL,getUserDetails);
 //delete operation 
-const deleteURL="http://localhost:3000/employees/2";
+const deleteURL="http://localhost:3000/employees/7";
 function userDeleted(data)
 {
     console.log("User Deleted: "+data);
 }
 makeAJAXCall("DELETE",deleteURL,userDeleted,false);
-//post call
+// //post call
 const postURL="http://localhost:3000/employees";
 const empData={"first_name":"Harry","salary":"60000"};
 function userAdded(data)
