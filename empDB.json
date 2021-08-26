@@ -3,17 +3,12 @@
     {
       "first_name": "Harry",
       "salary": "60000",
-      "id": 3
-    },
-    {
-      "first_name": "Harry",
-      "salary": "60000",
-      "id": 4
-    },
-    {
-      "first_name": "Harry",
-      "salary": "60000",
       "id": 5
+    },
+    {
+      "name": "radhika",
+      "salary": "40000",
+      "id": 6
     }
   ]
 }
